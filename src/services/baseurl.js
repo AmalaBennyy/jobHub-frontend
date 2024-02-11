@@ -1,1 +1,1 @@
-export const BASE_URL='http://localhost:4700'
+export const BASE_URL='https://jobhub-egxg.onrender.com'

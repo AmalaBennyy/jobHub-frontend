@@ -2,6 +2,7 @@
 import React, { useEffect,useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { deletejobApplicationApi, getApplicationsApi } from '../services/allPI';
+import { BASE_URL } from '../services/baseurl';
 
 function ApplicationList() {
   const[allapplication,setAlApplications]=useState([])
@@ -126,7 +127,7 @@ function ApplicationList() {
                <a href={`http://localhost:4700/uploads/${item.cv}`} target="_blank" rel="noopener noreferrer">
                     View CV <br />
                   </a> */}
-                  <a href={`http://localhost:4700/uploads/${item.cv}`} download>
+                  <a href={`${BASE_URL}/uploads/${item.cv}`} download>
                     Download CV
                   </a>
             </td>
